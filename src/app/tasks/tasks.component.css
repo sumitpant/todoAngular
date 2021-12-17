@@ -1,0 +1,7 @@
+.task{
+    display: flex;
+}
+.icons{
+    margin-left: auto;
+    margin-right: 10px;
+}

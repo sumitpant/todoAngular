@@ -1,0 +1,27 @@
+.create_task{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    position: sticky;
+    top:0
+}
+.todo{
+    width: 40%;
+    margin:auto;
+    margin-bottom: 10px;
+}
+.todos{
+    margin-top:30px
+}
+.complete{
+    
+    color:green;
+    font-weight: 900;
+    text-decoration: line-through;
+}
+.incomplete{
+    color:red;
+    font-weight: 500;
+    
+}

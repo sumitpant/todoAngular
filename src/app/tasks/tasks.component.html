@@ -1,0 +1,11 @@
+<app-create-task>
+  <div class="task" #items>
+    <ng-content select=[title]  ></ng-content>
+    <button mat-mini-fab color="primary" class="icons" (click)="deleteTask()" >
+      <mat-icon  >delete_forever</mat-icon>
+    </button>
+    <button mat-mini-fab color="primary" (click)="completeTask()">
+      <mat-icon>done</mat-icon>
+    </button>
+  </div>
+</app-create-task>
