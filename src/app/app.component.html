@@ -1,13 +1,26 @@
 
 <div class="create_task">
+
   <app-create-task>
     <p title>Create Task</p>
-    <mat-form-field appearance="standard">
+     <mat-form-field apperance ="standard" [formGroup] =" todoForm">
+       <mat-label>Todo ...</mat-label>
+       <input matInput placeholder ="Task" formControlName ="todo"/>
+      </mat-form-field>
+      <button mat-stroked-button color="primary" (click) ="createTask()">Create</button>
+
+  </app-create-task>
+
+
+
+  <!-- <app-create-task>
+    <p title>Create Task</p>
+    <mat-form-field appearance="standard" >
       <mat-label>Todo...</mat-label>
-      <input matInput placeholder="Task"  [(ngModel)] ="task"/>
+      <input matInput placeholder="Task"  [(ngModel)] ="task" />
     </mat-form-field>
     <button mat-stroked-button color="primary" (click) ="createTask()">Create</button>
-  </app-create-task>
+  </app-create-task> -->
 </div>
 
 <div class="todos">
